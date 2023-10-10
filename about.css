@@ -1,0 +1,200 @@
+:root{
+      --vampire-black: #040409;
+      --bright-gray: #EEEEEE;
+      --tufts-blue: #327ED4;
+      --dark-imperial-blue: #001B71;
+}
+  
+*, *::after, *::before{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+}
+  
+body{
+      background-color: var(--tufts-blue);
+      font-family: 'Satoshi', sans-serif;
+}
+  
+ul{
+      list-style: none;
+}
+  
+li{
+      padding: 0;
+}
+
+a{
+      text-decoration: none;
+      color: var(--bright-gray);
+}
+  
+h1{
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.4;
+      color: var(--bright-gray);
+}
+
+p{
+      color: var(--bright-gray);
+      list-style: 3;
+      font-weight: 400;
+      line-height: 1.8;
+}
+
+
+/* Mission Styles */
+
+.mission{
+      background-color: var(--bright-gray);
+      color: var(--tufts-blue);
+      position: relative;
+}
+
+.mission h1, .mission p, .vision h1, .vision p{
+      color: var(--bright-gray);
+}
+
+.mission img{
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+.mission .anime{
+      background-color: rgba(0,0,0, 0.8);
+      position: relative;
+      z-index: 3;
+      height: 70vh;
+}
+
+.mission div, .vision div{
+      padding: 4rem 2rem;
+}
+
+/* End of Mission Styles */
+
+.vision{
+      display: grid;
+      grid-template-columns: 1fr;
+      position: relative;
+}
+
+.vision img{
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      grid-row: 1/2;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+
+.vision .anime{
+      position: relative;
+      background-color: rgba(0,0,0, 0.8);
+      z-index: 3;
+}
+/* Reviews Section */
+
+
+.review-container{
+      position: relative;
+}
+
+.review-container div{
+      width: 70%;
+      margin: 0 auto;
+   
+}
+
+.review-container p{
+      font-weight: 500;
+      line-height: 1.8;
+}
+
+.review-container img{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+.review-container img.next{
+      position: absolute;
+      top: 8rem;
+      right: -2rem;
+}
+
+.review-container img.previous{
+      position: absolute;
+      top: 8rem;
+      left: -2rem;
+}
+
+
+footer h2, footer p{
+      color: var(--vampire-black);
+}
+
+
+
+@media(min-width: 768px) {
+      section.mission{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            margin-top: -0.5rem;
+            z-index: 20;
+            position: relative;
+
+      }
+
+      .mission img{
+            position: static;
+      }
+
+      .mission h1, .mission p, .vision h1, .vision p{
+            color: var(--tufts-blue)
+      }
+
+      .mission .anime{
+            background-color: #fff;
+       
+      }
+
+      .vision{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+      }
+      
+      .vision img{
+            grid-column: 2/3;
+            position: static;
+      }
+      
+      .vision .anime{
+            background-color: var(--bright-gray);
+      }
+
+      .review-container img.next{
+        
+            top: 2rem;
+            right: 3rem;
+       
+      }
+      
+      .review-container img.previous{
+         
+            top: 2rem;
+            left: 3rem;
+           
+      }
+      
+}

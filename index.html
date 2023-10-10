@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Becklad Properties</title>
+    <link rel="icon" type="image/x-icon" href="assets/becklad-logo.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!--Header Section-->
+    <header>
+      <div class="logo">
+        <img src="assets/becklad-logo.jpeg" alt="logo" />
+        <div>
+          <h1>Becklad</h1>
+          <h1 class="name">Properties</h1>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-icons-container">
+          <img
+            src="assets/hamburger.png"
+            alt=""
+            class="hamburger"
+            id="hamburger"
+          />
+          <img
+            src="assets/close-menu.png"
+            alt="close-menu"
+            class="close-menu"
+            id="close-menu"
+            style="color: white"
+          />
+        </div>
+        <ul>
+          <li><a href="/" class="anchor">Home</a></li>
+          <li><a href="#properties" class="anchor">Properties</a></li>
+          <li><a href="about.html" class="anchor">About Us</a></li>
+          <li><a href="contact.html" class="anchor">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--End of Header Section-->
+
+    <!-- Mobile Nav -->
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/" class="anchor">Home</a>
+      <a href="#properties" class="anchor">Properties</a>
+      <a href="about.html" class="anchor">About Us</a>
+      <a href="contact.html" class="anchor">Contact</a>
+    </div>
+
+    <!-- End of Mobile Nav -->
+
+    <!-- Banner Section -->
+
+    <section class="banner-section">
+      <div class="overlay-container">
+        <div class="under-image">
+          <img src="assets/houses/house-2.jpg" alt="house-2" />
+        </div>
+        <div class="overlay">
+          <div class="content anime">
+            <h1>Welcome to Becklad Properties</h1>
+            <p>
+              Your Premier Destination for Exceptional Properties! Explore Our
+              Diverse Selection of Land and House Listings. Find Your Ideal Home
+              or Investment Opportunity. Start Your Real Estate Journey with Us
+              Now!
+            </p>
+            <div class="button-container">
+              <a href="https://wa.me/+2349030002004">
+                <button>Contact Us</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Banner Section -->
+
+    <!-- properties Section -->
+
+    <section class="properties-section" id="properties">
+      <h1>What we have for you.</h1>
+
+      <div class="properties-container">
+        <a href="shortlets.html">
+          <div class="card-wrapper" data-aos="fade-in" data-aos-duration="5000">
+            <!-- <a href="shortlets.html"> -->
+            <div class="properties-image-container">
+              <img src="assets/shortlets/shortlet-1.jpg" alt="shortlet" />
+            </div>
+
+            <h2>Shortlets</h2>
+            <!-- </a> -->
+          </div>
+        </a>
+
+        <a href="houses.html">
+          <div class="card-wrapper" data-aos="fade-in" data-aos-duration="5000">
+            <div class="properties-image-container">
+              <img src="assets/houses/house-2.jpg" alt="house" />
+            </div>
+
+            <h2>Houses</h2>
+          </div>
+        </a>
+
+        <a href="lands.html">
+          <div class="card-wrapper" data-aos="fade-in" data-aos-duration="5000">
+            <div class="properties-image-container">
+              <img src="assets/lands/land.jpeg" alt="lands" class="land" />
+            </div>
+
+            <h2>Lands</h2>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- End of properties Section -->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <div class="logo-container">
+        <img src="assets/becklad-logo.jpeg" alt="logo" class="logo" />
+        <div>
+          <h2>Becklad Properties</h2>
+          <p>Victoria Island, Lagos Nigeria.</p>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <a href="https://wa.me/+2349030002004">
+          <div class="contact-container">
+            <img
+              src="assets/whatsapp.png"
+              alt="whatsapp"
+              class="social-icons whatsapp"
+            />
+            <p>09030002004</p>
+          </div>
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61551246916698&mibextid=LQQJ4d"
+        >
+          <div class="contact-container">
+            <img
+              src="assets/facebook-new-icon.jpeg"
+              alt="facebook"
+              class="social-icons"
+            />
+            <p>Facebook</p>
+          </div>
+        </a>
+
+        <a
+          href="https://instagram.com/becklad_properties?igshid=MzRlODBiNWFlZA=="
+        >
+          <div class="contact-container">
+            <img src="assets/ign.png" alt="instagram" class="social-icons" />
+            <p>Instagram</p>
+          </div>
+        </a>
+
+        <a href="mailto:support@beckladproperties.com">
+          <div class="contact-container">
+            <img
+              src="assets/envelope.jpg"
+              alt="envelope"
+              class="social-icons"
+            />
+            <p>support@beckladproperties.com</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="line"></div>
+      <div class="copyright">
+        <p>Becklad Properties &copy; <span id="current-year"></span></p>
+        <p class="dot">.</p>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- End of Footer Section -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
